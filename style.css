@@ -1,0 +1,71 @@
+*{
+    box-sizing: border-box;
+}
+body {
+    background:linear-gradient(hsl(218, 50%, 5%),hsl(218, 50%, 55%)) ;
+    background-repeat: no-repeat;
+    height: 100vh;
+    font-size: 1.2rem;
+}
+.main-title {
+    color: white;
+    text-align: center;
+    margin: 0;
+}
+.wrapper {
+    display: flex;
+    gap: 0.5rem;
+    justify-content: space-evenly;
+}
+.subject {
+    color: hsl(218, 58%, 19%);
+    background-color:hsl(228, 14%, 90%) ;
+    border-radius: 0.3rem;
+    padding: 0.5rem;
+    height: max-content;
+    user-select: none; 
+    flex-grow:1
+}
+
+.subject .title {
+    font-size: 1.4rem;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.cards {
+    min-height: 3rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+}
+.card {
+    cursor:pointer;
+    background-color: white;
+    padding: 0.5rem;
+    border-radius: 0.3rem;
+    width: max-content;
+}
+.hide {
+    display: none !important;
+}
+[data-draggable].dragging {
+    position: absolute;
+    opacity: 0.5;
+    transform: rotate(5deg);
+    pointer-events: none;
+}
+.ghost {
+    background-color: hsl(0,0%,0%,0.2);
+}
+.input {
+    font-size: 1rem;
+    outline: none;
+    border: none;
+    padding: 0.5rem 0;
+    background-color: inherit;
+}
+
+.add-card {
+    cursor: pointer;
+}

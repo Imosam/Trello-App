@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/9ade74d794.js" crossorigin="anonymous"></script>
+    <script src="script.js" defer type="module"></script>
+</head>
+<body>
+    <h1 class="main-title">Trello</h1>
+    <div class="wrapper">
+        <div class="subject">
+            <p class="title">Concept</p>
+            <div class="cards" data-drop-zone>
+            </div>
+            <form action="">
+                <i class="fa-solid fa-plus add-card"></i>
+                <input type="text" placeholder="Add Another Card" class="input">
+            </form>
+        </div>
+        <div class="subject">
+            <p class="title">positives</p>
+            <div class="cards" data-drop-zone>
+            </div>
+            <form action="">
+                <i class="fa-solid fa-plus add-card"></i>
+                <input type="text" placeholder="Add Another Card" class="input">
+            </form>
+        </div>
+        <div class="subject">
+            <p class="title">negatives</p>
+            <div class="cards" data-drop-zone>
+            </div>
+            <form action="">
+                    <i class="fa-solid fa-plus add-card"></i>
+                    <input type="text" placeholder="Add Another Card" class="input" >
+            </form>
+        </div>
+    </div>
+    <template id="card">
+        <div class="card" data-draggable></div>
+    </template>
+</body>
+</html>
